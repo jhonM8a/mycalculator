@@ -10,11 +10,11 @@ import (
 
 //tipo de dato que permite tener propiedades
 // y funciones, muy similiar a un como se usa en POO
-type calc struct{}
+type Calc struct{}
 
 //con(cal) estamos donde la posibilida de tener el metodo
 //dentro de cal
-func (calc) operator(entrada string, operador string) int {
+func (Calc) Operator(entrada string, operador string) int {
 	//Separa un string dado un separador
 	entradaLimpia := strings.Split(entrada, operador)
 	operador1 := parsear(entradaLimpia[0])
